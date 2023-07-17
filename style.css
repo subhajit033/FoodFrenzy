@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.6rem;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.5);
+  width: 100%;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  background-color: white;
+  /* margin-bottom: 15rem; */
+}
+.nav-items {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+.nav-items a{
+  text-decoration: none;
+}
+.nav-items li {
+  text-decoration: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: orange;
+}
+.nav-items p {
+  background-color: orange;
+  color: white;
+  width: 4.5rem;
+  padding: 0.3rem 0;
+  text-align: center;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.card {
+  /* border: 1px solid black; */
+  width: 17rem;
+  box-sizing: content-box;
+  padding: 1rem;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.4);
+  border-radius: 8px;
+  transition: 0.3s linear;
+}
+
+.card img {
+  width: 100%;
+  height: 10rem;
+  margin-bottom: 0.5rem;
+  transition: 0.3s linear;
+  border-radius: 8px;
+}
+.card img:hover {
+  scale: 1.06;
+}
+.card .description p {
+  font-size: 0.7rem;
+  color: rgba(0, 0, 0, 0.753);
+}
+.card .description h3 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.card .description .prices {
+  margin-top: 0.8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card .description .prices p:nth-child(1) {
+  /* border: 1px solid black; */
+  padding: 0.1rem 0.3rem;
+  background-color: chocolate;
+  color: white;
+}
+.card .description .prices p:nth-child(1) i {
+  color: white;
+}
+.card .description .fa-star {
+  font-size: 0.7rem;
+}
+.card .description i {
+  font-size: 0.3rem;
+  color: rgba(0, 0, 0, 0.753);
+}
+.restaurant-list {
+  margin: 2rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  align-items: flex-start;
+}
+.search-container {
+  text-align: center;
+  margin-top: 1.5rem;
+}
+.search-container input {
+  width: 20rem;
+  height: 2rem;
+  border: none;
+  border-bottom: 2px solid black;
+}
+.search-container input:focus {
+  border: none;
+  outline: none;
+  border-bottom: 2px solid black;
+}
+.search-container i {
+  cursor: pointer;
+}
